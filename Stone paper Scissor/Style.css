@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: aqua;
+}
+
+h1{
+    background-color: #081b31;
+    color: aliceblue;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+/* Choice */
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choice:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+    background-color: black;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 30% ;
+}
+
+.choices{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 5vh;
+}
+
+
+/* Display choice */
+
+.disp-choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 10vw;
+    margin-top: 5vh ;
+}
+
+.show-choice div{
+    display: inline-block;
+    font-size: 3rem;
+}
+
+
+
+/* Score board */
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 10vw;
+    margin-top: 5vh ;
+}
+
+#user-score,
+#comp-score{
+    font-size: 4rem;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* Message section */
+
+.message{
+    margin-top: 5vh;
+}
+
+#msg{
+    background-color: #081b31;
+    color: aliceblue;
+    font-size: 3rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
