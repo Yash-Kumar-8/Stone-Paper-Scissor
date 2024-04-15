@@ -6,8 +6,8 @@
 
 /* choice */
 .choice{
-    height: 120px;
-    width: 120px;
+    height: 15vh;
+    width:  30vw;
     border-radius: 30%;
     display: flex;
     justify-content: center;
@@ -16,8 +16,8 @@
 }
 
 img{
-    height: 115px;
-    width: 115px;
+    height: 15vh;
+    width: 30vw;
     object-fit: cover;
     border-radius: 30% ;
 }
@@ -33,7 +33,7 @@ img{
     flex-direction: column;
     justify-content:center;
     align-items:flex-start;
-    font-size: 2rem;
+    /* font-size: 3rem; */
     gap: 3vw;
     margin-top: 5vh ;
 }
@@ -41,7 +41,7 @@ img{
 .show-choice div{
     margin-left: 1vw;
     display: inline;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /* Message section */
@@ -53,7 +53,7 @@ img{
 #msg{
     background-color: #081b31;
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline;
     padding: 1rem;
     border-radius: 30px;
