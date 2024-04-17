@@ -16,68 +16,89 @@ const playGame = (userChoice) => {
 
 
     const compChoice = getCompChoice()
-
-
     console.log("user =", userChoice);
     console.log("computer =", compChoice);
 
+   
+
     if (compChoice === "rock" && userChoice === "paper") {
         userScore++;
-        document.getElementById("user-score").innerText = userScore;
-        document.getElementById("msg").innerText = "You Won ! 🎉🎉";
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
-
+        setTimeout(() => {
+            document.getElementById("user-score").innerText = userScore;
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "You Won ! 🎉🎉";
+        }, 1000)
     }
+
     else if (compChoice === "rock" && userChoice === "scissor") {
         compScore++;
-        document.getElementById("comp-score").innerText = compScore;
-        document.getElementById("msg").innerText = "Computer Won ! 🖥️🖥️"
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-score").innerText = compScore;
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "Computer Won ! 🖥️🖥️"
+        }, 1000)
     }
     else if (compChoice === "paper" && userChoice === "scissor") {
         userScore++;
         document.getElementById("user-score").innerText = userScore;
         document.getElementById("msg").innerText = "You Won ! 🎉🎉";
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-choice").innerText = compChoice;
+        }, 1000)    
     }
+
     else if (compChoice === "paper" && userChoice === "rock") {
         compScore++;
-        document.getElementById("comp-score").innerText = compScore;
-        document.getElementById("msg").innerText = "Computer Won ! 🖥️🖥️"
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-score").innerText = compScore;
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "Computer Won ! 🖥️🖥️"
+        }, 1000)
     }
+    
     else if (compChoice === "scissor" && userChoice === "paper") {
         compScore++;
-        document.getElementById("comp-score").innerText = compScore;
-        document.getElementById("msg").innerText = "Computer Won ! 🖥️🖥️"
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-score").innerText = compScore;
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "Computer Won ! 🖥️🖥️"
+        }, 1000)
     }
+    
     else if (compChoice === "scissor" && userChoice === "rock") {
         userScore++;
-        document.getElementById("user-score").innerText = userScore;
-        document.getElementById("msg").innerText = "You Won ! 🎉🎉";
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("user-score").innerText = userScore;
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "You Won ! 🎉🎉";
+        }, 1000)
     }
     else if (compChoice === "rock" && userChoice === "rock") {
-        document.getElementById("msg").innerText = "Match Tied ! 🙆‍♂️🙆‍♂️";
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "Match Tied ! 🙆‍♂️🙆‍♂️";
+        }, 1000)
     }
     else if (compChoice === "paper" && userChoice === "paper") {
-        document.getElementById("msg").innerText = "Match Tied ! 🙆‍♂️🙆‍♂️";
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "Match Tied ! 🙆‍♂️🙆‍♂️";
+        }, 1000)
     }
     else if (compChoice === "scissor" && userChoice === "scissor") {
-        document.getElementById("msg").innerText = "Match Tied ! 🙆‍♂️🙆‍♂️";
         document.getElementById("user-choice").innerText = userChoice;
-        document.getElementById("comp-choice").innerText = compChoice;
+        setTimeout(() => {
+            document.getElementById("comp-choice").innerText = compChoice;
+            document.getElementById("msg").innerText = "Match Tied ! 🙆‍♂️🙆‍♂️";
+        }, 1000)
     }
 }
 
